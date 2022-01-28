@@ -100,8 +100,57 @@
             top: 12px;
         }
 
+        #home-opt {
+            padding: 0 10px 0 0 !important;
+        }
+
         #menu-bar-2 a:hover {
             text-decoration: underline;
+        }
+
+        #page-container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        #article-summary {
+            color: #5a5a5a;
+            width: 320px;
+            float: right;
+
+        }
+
+        #article-summary img {
+            height: 15px;
+            position: relative;
+            margin-right: 5px;
+            top: 2px;
+        }
+
+        #article-summary a {
+            text-decoration: none;
+            color: #383838;
+            border-left: 1px solid #CCCCCC;
+            padding-left: 5px;
+        }
+
+        #article-summary a:hover {
+            color: #0c6d81;
+            text-decoration: underline;
+        }
+
+        #date {
+            padding-right: 6px;
+        }
+
+        #article-container {
+            float: left;
+            width: 940px;
+            padding-top: 10px;
+        }
+
+        #google-cookie-image {
+            width: 600px;
         }
 
         .topBar-section {
@@ -145,7 +194,29 @@
             font-weight: normal;
             margin-top: 5px;
             padding-top: 8px;
-            padding-left: 8px;
+        }
+
+        h2 {
+            font-weight: normal;
+            color: #393939;
+            font-size: 20px;
+            margin-top: 45px;
+            border-bottom: 3px solid #a91717;
+            width: 44px;
+        }
+
+        h3 a {
+            font-size: 30px;
+            text-decoration: none;
+            border-left: none !important;
+            padding-left: 0 !important;
+            color: black;
+            width: 320px;
+        }
+
+        h3 a:hover {
+            color: #0c6d81;
+            text-decoration: underline;
         }
 
     </style>
@@ -164,6 +235,12 @@
 
             <span id="sign-in-text" class="topBar-text">Sign in</span>
             
+        </div>
+
+        <div class="topBar-section topBar-menu">
+
+            <span>Home</span>
+
         </div>
 
         <div class="topBar-section topBar-menu">
@@ -193,12 +270,6 @@
         <div class="topBar-section topBar-menu">
 
             <span>Travel</span>
-
-        </div>
-
-        <div class="topBar-section topBar-menu">
-
-            <span>Future</span>
 
         </div>
 
@@ -234,7 +305,7 @@
 
             <div id="menu-bar-2">
 
-                <a href="">Home</a>
+                <a id="home-opt" href="">Home</a>
                 <a href="">Coronavirus</a>
                 <a href="">Climate</a>
                 <a href="">Video</a>
@@ -244,6 +315,8 @@
                 <a href="">Tech</a>
                 <a href="">Science</a>
                 <a href="">Stories</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Health</a>
                 <a href="" class="no-border">More</a>
                 <img id="more-arrow-2" src="images/more-arrow-2.png">
 
@@ -255,7 +328,30 @@
 
     <div class="clear"></div>
 
+    <div id="page-container">
 
+        <div id="main-article">
+
+            <h2>Tech</h2>
+
+            <div id="article-container">
+
+                <div id="article-summary">
+
+                    <h3><a href="">Google slammed over ad-cookie replacement flip-flop</a></h3>
+
+                    <p>The system Google planned to replace cookies is now itself being replaced with a slightly different idea.</p>
+                    <p id="clock-image"><img src="images/clock.png"><span id="date">26. Jan 2022</span><a href="">Technology</a></p>
+
+                </div>
+
+                <img id="google-cookie-image" src="images/google-cookies.png">
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
