@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+
+    <p id="text">Hello World!</p>
+
+    <button id="firstButton">Change text</button>
+
+    <p id="secondText">Javascript is...</p>
+
+    <button id="secondButton">Change text again</button>
+
+    <p id="thirdText"></p>
+
+    <button id="thirdButton">Show me some text!</button>
+
+    <input type="text">
+
+    <button>Change mee!</button>
+
+    <p>Some text</p>
+
+    <script type="text/javascript">
+
+        // selecting
+
+        document.getElementById("firstButton").onclick = function () {
+            document.getElementById("text").innerHTML = "Hello you there!";
+        }
+
+        document.getElementById("secondButton").onclick = function () {
+            document.getElementById("secondText").innerHTML += "Oh hi!";
+        }
+
+        document.getElementById("thirdButton").onclick = function () {
+            document.getElementById("thirdText").innerHTML = "<h3>Hey, I'm that text</h3>";
+        }
+
+    </script>
+
+</body>
+</html>
