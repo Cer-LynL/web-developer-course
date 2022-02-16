@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>JS loops</title>
+    </head>
+
+    <body>
+
+        <div id="tweetDiv"></div>
+
+        <script type="text/javascript">
+
+            var tweetString = "";
+
+            var tweets = ["Howdy!", "I love cars", "Someone bring me coffee pls!",
+                "I spend too much time on Twitter lol"];
+
+            for (var i = 0; i < tweets.length; i++) {
+
+                tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+            }
+
+            document.getElementById("tweetDiv").innerHTML = tweetString;
+
+        </script>
+
+    </body>
+</html>

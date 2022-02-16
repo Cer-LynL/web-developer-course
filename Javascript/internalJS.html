@@ -6,38 +6,28 @@
 </head>
 <body>
 
-    <p id="text">Hello World!</p>
+    <p>What's my favorite food?</p>
 
-    <button id="firstButton">Change text</button>
+    <input type="text" id="textInput">
 
-    <p id="secondText">Javascript is...</p>
-
-    <button id="secondButton">Change text again</button>
-
-    <p id="thirdText"></p>
-
-    <button id="thirdButton">Show me some text!</button>
-
-    <input type="text">
-
-    <button>Change mee!</button>
-
-    <p>Some text</p>
+    <p><button id="checkFaveFood">Enter</button></p>
 
     <script type="text/javascript">
 
-        // selecting
+        document.getElementById("checkFaveFood").onclick = function () {
+            var foodEntered = document.getElementById("textInput").value;
 
-        document.getElementById("firstButton").onclick = function () {
-            document.getElementById("text").innerHTML = "Hello you there!";
-        }
+            var actualFood = "Pizza";
 
-        document.getElementById("secondButton").onclick = function () {
-            document.getElementById("secondText").innerHTML += "Oh hi!";
-        }
+            if (foodEntered == actualFood) {
 
-        document.getElementById("thirdButton").onclick = function () {
-            document.getElementById("thirdText").innerHTML = "<h3>Hey, I'm that text</h3>";
+                alert("You got it!")
+
+            } else {
+
+                alert("Try again!")
+
+            }
         }
 
     </script>
